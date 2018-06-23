@@ -25,19 +25,29 @@ coverage
 
 # Bower dependency directory (https://bower.io/)
 bower_components
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # node-waf configuration
 .lock-wscript
+# dependencies
+/node_modules
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+# testing
+/coverage
 
 # Dependency directories
-node_modules/
 jspm_packages/
+# production
+/build
 
-# TypeScript v1 declaration files
-typings/
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Optional npm cache directory
 .npm
@@ -59,3 +69,5 @@ typings/
 
 # next.js build output
 .next
+# TypeScript v1 declaration files
+typings/
